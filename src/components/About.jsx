@@ -1,50 +1,36 @@
-export default function About() {
+import React from 'react';
+
+function About() {
   return (
-    <>
-      <section id="nosotros" style={styles.section}>
-        <h2 style={styles.title}>¿Por qué elegirnos?</h2>
+    <section style={{ backgroundColor: '#001F3F', color: 'white', padding: '60px 20px', fontFamily: 'sans-serif' }}>
+      
+      {/* Sección: ¿Por qué elegirnos? - VERSIÓN MARISCOS */}
+      <div style={{ textAlign: 'center', marginBottom: '50px' }}>
+        <h2 style={{ color: '#FFD700', fontSize: '2.4rem', marginBottom: '20px', fontWeight: 'bold' }}>
+          ¿Por qué elegirnos?
+        </h2>
+        <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '1.2rem', lineHeight: '2' }}>
+          <li>✔️ Mariscos 100% frescos y preparados al momento</li>
+          <li>✔️ Salsas negras exclusivas de la casa</li>
+          <li>✔️ Entregas rápidas y seguras en Ciudad Granja</li>
+          <li>✔️ Porciones súper bien servidas para quitar el antojo</li>
+        </ul>
+      </div>
 
-        <div style={styles.box}>
-          <p>✔ Impresión de alta resolución</p>
-          <p>✔ Diseños 100% personalizados</p>
-          <p>✔ Entregas puntuales</p>
-          <p>✔ Atención a cada detalle</p>
-        </div>
-      </section>
+      {/* Sección: Contacto - VERSIÓN MARISCOS */}
+      <div style={{ textAlign: 'center', paddingBottom: '20px' }}>
+        <h2 style={{ color: '#FFD700', fontSize: '2.4rem', marginBottom: '20px', fontWeight: 'bold' }}>
+          Contacto
+        </h2>
+        <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '1.2rem', lineHeight: '2' }}>
+          <li>📍 Servicio a domicilio (Llegamos hasta tu puerta)</li>
+          <li>📞 Atención rápida y directa por WhatsApp</li>
+          <li>💬 Mándanos un mensaje y preparamos tu pedido</li>
+        </ul>
+      </div>
 
-      <section id="contacto" style={styles.contact}>
-        <h2 style={styles.title}>Contacto</h2>
-        <p>📍 Entregas a acordar (Servicio seguro)</p>
-        <p>📞 Atención directa por Redes Sociales</p>
-        <p>💬 Cotiza tu idea con nosotros</p>
-      </section>
-    </>
+    </section>
   );
 }
 
-const styles = {
-  section: {
-    padding: "80px 20px",
-    textAlign: "center",
-    background: "#111",
-    color: "white"
-  },
-  title: {
-    fontSize: "28px",
-    marginBottom: "20px",
-    color: "#FFCC00"
-  },
-  box: {
-    marginTop: "20px",
-    lineHeight: "2",
-    opacity: 0.9,
-    fontSize: "18px"
-  },
-  contact: {
-    padding: "80px 20px",
-    textAlign: "center",
-    background: "#0a0a0a",
-    color: "white",
-    borderTop: "1px solid #333"
-  }
-};
+export default About;
