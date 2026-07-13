@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
   return (
-    <section style={{ backgroundColor: '#001F3F', color: 'white', padding: '60px 20px', fontFamily: 'sans-serif' }}>
+    <section id="Nosotros" style={{ backgroundColor: '#001F3F', color: 'white', padding: '60px 20px', fontFamily: 'sans-serif' }}>
       
       {/* Sección: ¿Por qué elegirnos? - VERSIÓN MARISCOS */}
       <div style={{ textAlign: 'center', marginBottom: '50px' }}>

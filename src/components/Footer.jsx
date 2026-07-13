@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer style={{ 
+    <footer id="Contacto" style={{ 
       backgroundColor: '#001F3F', 
       color: 'white', 
       padding: '45px 20px', 

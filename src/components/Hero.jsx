@@ -2,7 +2,7 @@ import React from 'react';
 
 function Hero() {
   return (
-    <section style={{ 
+    <section id="Inicio" style={{ 
       backgroundColor: '#002B49', 
       color: 'white', 
       padding: '80px 20px', 

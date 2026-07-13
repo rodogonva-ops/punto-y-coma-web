@@ -24,7 +24,7 @@ const menuItems = [
 
 function Services() {
   return (
-    <section style={{ backgroundColor: '#F3F4F6', padding: '60px 20px', fontFamily: 'sans-serif' }}>
+    <section id="Menu" style={{ backgroundColor: '#F3F4F6', padding: '60px 20px', fontFamily: 'sans-serif' }}>
       
       {/* 1. SECCIÓN DE TARJETAS VISUALES */}
       <div style={{ textAlign: 'center', marginBottom: '70px' }}>
