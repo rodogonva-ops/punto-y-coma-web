@@ -1,40 +1,19 @@
-export default function Navbar() {
-  return (
-    <nav style={styles.nav}>
-      <h2 style={styles.logo}>
-        <span style={{ color: "#FFCC00" }}>STAMPA</span> / Pineapple Party
-      </h2>
+import React from 'react';
 
-      <div style={styles.links}>
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#contacto">Contacto</a>
+function Navbar() {
+  return (
+    <nav style={{ backgroundColor: '#001F3F', padding: '20px 40px', color: 'white', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '3px solid #D32F2F' }}>
+      <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#FFF' }}>
+        Punto y Coma Camarón
       </div>
+      <ul style={{ listStyle: 'none', display: 'flex', gap: '30px', margin: 0, padding: 0, fontSize: '1.1rem' }}>
+        <li style={{ cursor: 'pointer' }}>Inicio</li>
+        <li style={{ cursor: 'pointer' }}>Menú</li>
+        <li style={{ cursor: 'pointer' }}>Nosotros</li>
+        <li style={{ cursor: 'pointer' }}>Contacto</li>
+      </ul>
     </nav>
   );
 }
 
-const styles = {
-  nav: {
-    display: "flex",
-    justifyContent: "space-between",
-    padding: "18px 30px",
-    alignItems: "center",
-    background: "rgba(0,0,0,0.8)",
-    backdropFilter: "blur(10px)",
-    position: "sticky",
-    top: 0,
-    zIndex: 100,
-    borderBottom: "2px solid #FFCC00"
-  },
-  logo: {
-    color: "white",
-    fontWeight: "bold",
-    margin: 0
-  },
-  links: {
-    display: "flex",
-    gap: "20px"
-  }
-};
+export default Navbar;
